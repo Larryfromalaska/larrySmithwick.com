@@ -1,0 +1,79 @@
+<div class="p-grid" id="container">
+  <h1 id="contact-form-title" class="p-col-10 p-offset-1">
+    Contact Me
+  </h1>
+
+  <form id="contact-form" class="p-md-10 p-md-offset-1 p-col-12">
+    <div class="p-p-2 p-text-center">
+      <p>
+        Leave your name and email and the purpose of your salutation and I'll get back
+        with you as soon as I can. (unless you are trying to sell me something... begone!)
+      </p>
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid">
+      <div class="p-field p-md-4 p-md-offset-2 p-sm-col-5 p-sm-offset-1 p-col-12">
+        <label for="first-name-input">First Name*</label>
+        <input id="first-name-input"
+              name="first-name-input"
+              type="text"
+              required
+              pInputText
+              [(ngModel)]="contactForm.firstName"/>
+      </div>
+
+      <div class="p-field p-md-4 p-sm-col-5 p-col-12">
+        <label for="last-name-input">Last Name*</label>
+        <input id="last-name-input"
+               name="last-name-input"
+               type="text"
+               required
+               pInputText
+               [(ngModel)]="contactForm.lastName"/>
+      </div>
+
+      <div class="p-field p-md-4 p-md-offset-2 p-sm-col-5 p-sm-offset-1 p-col-12">
+        <label for="email-input">Email*</label>
+        <input id="email-input"
+              name="email-input"
+              type="text"
+              required
+              pInputText
+              [(ngModel)]="contactForm.email"/>
+      </div>
+
+      <div class="p-field p-md-4 p-sm-5 p-col-12">
+        <label for="phone-number-input">Phone Number</label>
+        <input id="phone-number-input"
+               name="phone-number-input"
+               type="text"
+               required
+               pInputText
+               [(ngModel)]="contactForm.phoneNumber"/>
+      </div>
+
+      <div class="p-field p-md-8 p-md-offset-2 p-sm-10 p-sm-offset-1 p-col-12">
+        <label for="contact-reason-input">Reason For Contact*</label>
+        <textarea id="contact-reason-input"
+                  [rows]="10"
+                  autoResize="autoResize"
+                  minlength="30"
+                  required
+                  pInputTextarea
+                  [(ngModel)]="contactForm.reasonForContact">
+        </textarea>
+      </div>
+
+      <div class="p-md-2 p-md-offset-5 p-sm-4 p-sm-offset-4 p-col-12">
+        <button id="send-button"
+                type="button"
+                class="p-button-lg"
+                icon="pi pi-check"
+                iconPos="left"
+                pButton
+                label="Submit">
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,14 @@
+@import '../../../variables.scss';
+
+.container {
+  background-color: $content-color;
+  border-color: border-color;
+  border-width: 2px;
+  border-style: solid;
+}
+
+#headshot-image {
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+}

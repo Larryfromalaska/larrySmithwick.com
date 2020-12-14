@@ -1,0 +1,47 @@
+// Variables
+$ground-color: rgb(23, 33, 47);
+$content-color: rgb(31, 45, 64);
+$border-color: rgb(48, 69, 98);
+$primary-text-color: rgb(230, 230, 230);
+$secondary-text-color: rgb(179, 179, 179);
+$highlighted-text-color-1: rgb(255, 102, 0);
+$highlighted-text-color-2: rgb(77, 0, 255);
+$highlighted-text-color-3: rgb(0, 255, 153);
+$primary-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Breakpoints
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1200px;
+
+// Mixins
+%title-text {
+  letter-spacing: 2px;
+  font-weight: 200;
+
+  @media screen and (min-width: $sm-breakpoint) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: $md-breakpoint) {
+    font-size: 3rem;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    font-size: 4rem;
+  }
+}
+
+%content-block {
+  background-color: $content-color;
+  border-style: solid;
+  border-color: $border-color;
+}
+
+%input-label {
+  color: $primary-text-color;
+  padding-right: 0.5em;
+  margin-right: 1em;
+  font-size: 1.2em;
+}

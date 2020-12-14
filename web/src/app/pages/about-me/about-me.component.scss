@@ -1,0 +1,9 @@
+@import '../../../variables.scss';
+
+#container {
+  margin-top: 1em;
+}
+
+.content {
+  @extend %content-block;
+}

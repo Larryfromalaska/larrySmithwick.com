@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+html {
+  background-color: $ground-color;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: $primary-text-color;
+  font-family: $primary-font;
+}
+
+.navigation-menu {
+  ul.p-tabmenu-nav {
+    flex-direction: row-reverse !important;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    >li {
+      padding-right: 30px;
+
+      >a {
+        background-color: $ground-color !important;
+        box-shadow: unset !important;
+      }
+    }
+  }
+}

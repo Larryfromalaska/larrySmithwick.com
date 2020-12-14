@@ -1,0 +1,55 @@
+@import '../../../variables.scss';
+
+.container {
+  padding: 30px;
+}
+
+.welcome-banner {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  @media only screen and (max-width: $sm-breakpoint) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: $md-breakpoint) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    font-size: 2.5rem;
+  }
+}
+
+#banner-img {
+  width: 40vw;
+  max-width: 200px;
+}
+
+#welcome-text {
+  text-align: center;
+
+  i {
+    color: $highlighted-text-color-1;
+  }
+
+  b {
+    color: $highlighted-text-color-3;
+  }
+
+  @extend %content-block;
+}
+
+#contact-vectorone-button {
+  @media only screen and (max-width: $sm-breakpoint) {
+    font-size: 1rem;
+  }
+
+  @media screen and (min-width: $md-breakpoint) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    font-size: 2.5rem;
+  }
+}
